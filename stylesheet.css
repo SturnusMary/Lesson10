@@ -69,7 +69,7 @@ a {
     display: flex;
     align-items: center; 
 }
-.ba-nav  span,
+.ba-nav  a,
 input[name="entry-field"]::placeholder {
     color: #898691;
     letter-spacing: 2.8px;
