@@ -126,10 +126,11 @@ a {
     margin-top: 10px;
     width: 330px;
 }
-.newpagemore {
-    position: absolute;
-    bottom: 37px;
-    left: 37px;
+.marginauto {
+    margin-top: auto;
+}
+
+.newpagemore { 
     color: #ffffff;
     font-size: 20px;
     font-weight: bold;
@@ -321,7 +322,7 @@ input[type="button"] {
         background: url(img/search.png) no-repeat 90px center;
     }
     .flex-main, .ba-container {
-        margin-top: 30px;
+        margin-top: 25px;
     }
     .social-network {
         margin-right: 20px;
@@ -335,11 +336,15 @@ input[type="button"] {
     .header-search  {
         margin-right: 37px;
     }
+    .ba-footer .ba-container {
+        margin-bottom: 25px; 
+        margin-top: 0px;
+    }
 }
 @media (max-width: 840px) {
     .page-two ,.page-six {
       flex-basis: 100%;
-      margin-right: 0px;   
+      margin-right: 0px;
     }
     .page-three {
         flex-basis: 49%;  
@@ -362,6 +367,7 @@ input[type="button"] {
     }
     .ba-section {
         padding: 20px;
+        height: 422px;
     }
     .title {
         font-size: 55px;
@@ -395,7 +401,7 @@ input[type="button"] {
       margin-right: 0px;   
     }
     .page-three {
-        height: 422px;
+        height: 400px;
         flex-basis: 100%;   
       }
     .titlelight {
@@ -403,6 +409,7 @@ input[type="button"] {
       }
     .flex-center {
         flex-basis: 49%;
+        height: 400px;
       }
     .titleh3 {
         color: #ffffff;
@@ -421,7 +428,7 @@ input[type="button"] {
         font-size: 18px; 
     }
     .titlelight {
-        padding-top: 20px;
+        padding-top: 0px;
     }
     .content-home {
         width: 250px;
@@ -429,17 +436,14 @@ input[type="button"] {
 }
 @media (max-width: 401px) {
     .page-two {
-         flex-basis: 100%;
+        flex-basis: 100%;
         margin-right: 0px;
-         width: 400px;  
+        width: 400px;  
         background: #75bac6 url(img/two.png) no-repeat right top;
         background-size: 90%;
     }
-    .page-three {
-        height: 422px;
-        flex-basis: 100%;  
-        padding-right: 0px;
-        padding-left: 0px;
+    .subscribe-form {
+        margin: 20px 0 20px 0;
     }
     .titlelight {
         margin-top: 0px;
@@ -456,19 +460,8 @@ input[type="button"] {
     .page-six {
         flex-basis: 100%;
     }
-    .ba-nav, .header-search {
-        flex-basis: 100%;
-    }
     .ba-section__prevue {
         width: 250px;
-    }
-    .header-search a {
-        margin: 0 0 20px 20px;
-        padding-left: 27px;
-        background: url(img/search.png) no-repeat left center;
-    }
-    .header-search {
-        order: -1;
     }
     .ba-container {
         overflow: hidden;
@@ -483,5 +476,17 @@ input[type="button"] {
        background: #1ab467 url(img/five.png) no-repeat right bottom;
        background-size: 90%;
    }
+   .ba-section {
+    height: 350px; 
+   }
+   .page-three {
+    height: 400px;
+    flex-basis: 100%;  
+    padding-right: 0px;
+    padding-left: 0px;
+    }
+    .page-one {
+        height: 400px;
+    }
 }
 
